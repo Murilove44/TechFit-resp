@@ -22,13 +22,14 @@ body {
 }
 
 .logo-itens {
+    gap: 10px;
     height: 100%;
     width: auto;
     display: flex;
 }
 
 .logo-png img {
-    height: 100%;
+    height: 90%;
 }
 
 #Logo {
