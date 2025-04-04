@@ -12,32 +12,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Henny+Penny&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tapestry&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="halteres.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/media.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
     <link rel="stylesheet" href="css/icons.css">
 </head>
 <body>
-    <header>
+    <header> 
+        <!-- mexer depois -->
         <nav class="cabecario">
-            <a id="Logo" href="index.html">TechFit</a>
+            <a id="Logo" href="index.html">TechFit <div class="logo-png">
+                <img src="css/png/techfit-logo.png" width="70px" alt="">
+            </div></a>
             <ul class="list">
-                <li><a href="duvidas.html">Dúvidas</a></li>
-                <li><a href="faleconosco.html">Fale Conosco</a></li>
+                <li><a href="duvidas.html">Dúvidas Frequentes</a></li>
+                <li><a href="planos.html">Planos</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="parceiros.html">Nossos parceiros</a></li>
+                <li><a href="parceiros.html">Nossos Parceiros</a></li>
             </ul>
         </nav>
+        <button 
+            class="burguer-menu">☰
+        </button>
+            <nav class="cabecario-menu">
+                <ul class="list">
+                    <li><a href="duvidas.html">Dúvidas Frequentes</a></li>
+                    <li><a href="faleconosco.html">Planos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="parceiros.html">Nossos Parceiros</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <main>
+    <main class="main">
         <article class="presentation">
             <h1 id="frase_inicial">A mudança começa aqui</h1>
             <article class="container1">
-                <article class="introducao">
+                 <article class="introducao">
                     <h1>Sobre nós</h1>
-                    <p>Na TechFit, acreditamos que cuidar do corpo é cuidar da vida. Fundada por apaixonados por fitness, nossa academia nasceu com o propósito de transformar vidas através de um ambiente acolhedor, equipamentos modernos e programas personalizados</p>
-                    <img src="css/fotos/introducao.jpg" alt="img">
-                </article>
+                    <p class="introducao-txt">Na TechFit, acreditamos que cuidar do corpo é cuidar da vida. Fundada por apaixonados por fitness, nossa academia nasceu com o propósito de transformar vidas através de um ambiente acolhedor, equipamentos modernos e programas personalizados</p>
+                     <img class="introducao-img" src="css/fotos/introducao.jpg" alt="img"> 
+                 </article>
                 <section class="propaganda">
                     <h2>Aproveite o nosso plano semestral</h2>
                     <p>Matrícula grátis + 20% de desconto na mensalidade</p>
@@ -122,29 +137,23 @@
             </article>
         </article>
         <article class="beneficios">
-            <h2>Porque você deveria treinar? Descubra os benefícios de uma vida saudável</h2>
+            <h2 class="beneficios-titulo">Porque você deveria treinar? Descubra os benefícios de uma vida saudável</h2>
             <section class="content">
-                <div class="text-01">
-                    <p>Treinar na academia vai muito além de conquistar um corpo em forma: é sobre saúde, disposição e qualidade de vida. Os exercícios físicos fortalecem o coração, melhoram a postura, aumentam a resistência muscular e ajudam no controle do peso. Além dos benefícios físicos, treinar regularmente reduz o estresse, aumenta a produção de endorfinas (o hormônio do bem-estar) e melhora a autoestima. A disciplina desenvolvida na academia se reflete em outras áreas da vida, ajudando você a estabelecer metas, superar desafios e manter o foco. Na TechFit, você encontra o suporte necessário para transformar esses benefícios em realidade, com planos personalizados, instrutores qualificados e um ambiente motivador. Invista no seu corpo, na sua mente e na sua disciplina – comece hoje mesmo a mudar sua vida para melhor!</p>
-                </div>
-                <div class="photo">
-                    <img src="css/fotos/foto3.jpg" alt="foto3">
-                </div>
+                    <p class="beneficios-txt">Treinar na academia vai muito além de conquistar um corpo em forma: é sobre saúde, disposição e qualidade de vida. Os exercícios físicos fortalecem o coração, melhoram a postura, aumentam a resistência muscular e ajudam no controle do peso. Além dos benefícios físicos, treinar regularmente reduz o estresse, aumenta a produção de endorfinas (o hormônio do bem-estar) e melhora a autoestima. A disciplina desenvolvida na academia se reflete em outras áreas da vida, ajudando você a estabelecer metas, superar desafios e manter o foco. Na TechFit, você encontra o suporte necessário para transformar esses benefícios em realidade, com planos personalizados, instrutores qualificados e um ambiente motivador. Invista no seu corpo, na sua mente e na sua disciplina – comece hoje mesmo a mudar sua vida para melhor!</p>
+                    <img class="beneficios-img" src="css/fotos/foto3.jpg" alt="foto3">
             </section>
         </article>
         <article class="sobre-nos">
-            <section id="descricao">
-                <p>Na academia TechFit, você encontra tudo o que precisa para transformar seu corpo e sua mente. Com equipamentos modernos, aulas diversificadas e instrutores qualificados, oferecemos um ambiente acolhedor e motivador para todos os níveis, do iniciante ao avançado. Aqui, seu treino é personalizado para atingir seus objetivos, seja perder peso, ganhar massa muscular ou melhorar sua saúde. Além disso, contamos com avaliações físicas, acompanhamento nutricional e programas especiais para gestantes, idosos e adolescentes. Venha fazer parte da nossa família e descubra por que a TechFit é a escolha certa para você!</p>
-            </section>
+                <p class="sobre-nos-txt">Na academia TechFit, você encontra tudo o que precisa para transformar seu corpo e sua mente. Com equipamentos modernos, aulas diversificadas e instrutores qualificados, oferecemos um ambiente acolhedor e motivador para todos os níveis, do iniciante ao avançado. Aqui, seu treino é personalizado para atingir seus objetivos, seja perder peso, ganhar massa muscular ou melhorar sua saúde. Além disso, contamos com avaliações físicas, acompanhamento nutricional e programas especiais para gestantes, idosos e adolescentes. Venha fazer parte da nossa família e descubra por que a TechFit é a escolha certa para você!</p>
         </article>
         <article class="informacoes">
             <div class="localizacao">
-                <h2>Localização</h2>
+                <h2 class="localizacao-titulo">Localização</h2>
                 <section class="endereco">
                     <div class="mapBox">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3730.8143506768824!2d-42.882445001236185!3d-20.758317448464105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1742398741795!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <ul>
+                    <ul class="localizacao-endereço">
                         <li><h3>Academia TechFit</h3>
                         <li><p>Rua dos Atletas, 123</p></li>
                         <li><p>Bairro Energético</p></li>
@@ -154,16 +163,16 @@
                 </section>
             </div>
             <div class="horarios">
-                <section class="text-02">
-                    <h2>Horários de Funcionamento</h2>
-                    <ul>
+                <section class="horarios-section">
+                    <h2 class="horarios-titulo">Horários de Funcionamento</h2>
+                    <ul class="horarios-list">
                         <li><p>Segunda à sexta: 06h-22h</p></li>
                         <li><p>Sábado: 06h-18h</p></li>
                         <li><p>Domingo: 06h-13h</p></li>
                     </ul>
                 <p id="aviso">Abrimos em todos os feriados!!</p>
                 </section>
-                <div class="png">
+                <div class="horarios-img">
                     <img src="css/png/figuresmall.png" alt="">
                 </div>
             </div>
@@ -172,7 +181,7 @@
             <h2>Nossos Planos</h2>
             <div class="container">
                 <div class="anual">
-                    <h3>Plano anual</h3>
+                    <h3 class="planos-type">Plano anual</h3>
                     <ul class="benefits">
                         <li><p>matricula grátis</p></li>
                         <li><p>1 mês grátis</p></li>
@@ -190,7 +199,7 @@
                     </div>
                 </div>
                 <div class="semestral">
-                    <h3>Plano semestral</h3>
+                    <h3 class="planos-type">Plano semestral</h3>
                     <ul class="benefits">
                         <li><p>matricula grátis</p></li>
                         <li><p>1 mês grátis</p></li>
@@ -208,7 +217,7 @@
                     </div>
                 </div>
                 <div class="mensal">
-                    <h3>Plano mensal</h3>
+                    <h3 class="planos-type">Plano mensal</h3>
                     <ul class="benefits">
                         <li><p>matricula grátis</p></li>
                         <li><p>1 mês grátis</p></li>
@@ -226,6 +235,9 @@
                 </div>
             </div>
         </article>
+    </main>
+
+    <footer>
         <article class="final">
             <h2>Eai, vai querer ficar de fora?</h2>
             <p>Assine ainda hoje e ganhe uma camiseta gratuita. Venha fazer parte do nosso time!</p>
@@ -239,10 +251,6 @@
             </ul>
             <p>2019-2025, TechFit</p>
         </article>
-    </main>
-
-    <footer>
-
     </footer>
 </body>
 </html>
