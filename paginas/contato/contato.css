@@ -180,6 +180,7 @@ a {
         padding: 0 10px;
         display: flex;
         flex-direction: column;
+        height: 70vh;
     }
     .list {
         display: none;
