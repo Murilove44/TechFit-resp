@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Chivo';
+}
+
+:root {
+    --corprimaria: #30545f;
+    --corsecundaria: #207A97;
+    --background: #ffffffe7;
+    --font: #F5F5F5;
+    --input: #ffffffc4;
+    --corterciaria: #d4ac31;
+    --corterciariaHover: #bb972c;
+    --contato: #292929ee;
+}
+
+main {
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+
+#frase_inicial {
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Tapestry';
+}
+
+.logo-itens {
+    gap: 10px;
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.logo-png img {
+    height: 90%;
+}
+
+#Logo {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    font-family: 'Oswaldo';
+}
+
+.cabecario {
+    background: #0A0A0A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.cabecario-menu {
+    display: none;
+}
+
+.cabecario a {
+    padding-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cabecario p {
+    color: #fff;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list a {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.list a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.burguer-menu {
+    display: none;
+}
+
+/*main*/
+
+.contato {
+    box-shadow: 2px 2px 5px black;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--contato);
+}
+
+.contato h1, p, label {
+    text-shadow: 2px 2px 3px  black;
+}
+
+.contato h1 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--corterciaria);
+}
+
+.contato p, label {
+    font-size: 1.2rem;
+    color: var(--font);
+}
+
+.form {
+    padding: 2rem 0;
+}
+
+#nome, #email, #mensagem {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-buttom {
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--corsecundaria);
+}
+
+#email-direto {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--corterciaria);
+}
+
+/*footer*/
+
+.items {
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #0A0A0A;
+    text-align: center;
+}
+
+.items a {
+    color: #fff;
+}
+
+.items a:hover {
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+.items p {
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+}
+
+.items ul {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 866px) {
+    main {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .list {
+        display: none;
+    }
+    li {
+        background: #000;
+    }
+    .cabecario-menu {
+        display: flex;
+        justify-content: end;
+        background: #000;
+        gap: 1rem;
+    }
+    .cabecario-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .cabecario-menu li {
+        background: #000;
+    }
+    .cabecario-menu a {
+        color: var(--font);
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    #nome, #email, #mensagem {
+        margin: 5px 0;
+    }
+    footer a {
+        font-size: 10px;
+    }
+}

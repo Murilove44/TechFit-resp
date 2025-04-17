@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Chivo';
+}
+
+:root {
+    --corprimaria: #30545f;
+    --corsecundaria: #207A97;
+    --background: #333333;
+    --font: #F5F5F5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#frase_inicial {
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Tapestry';
+}
+
+.logo-itens {
+    gap: 10px;
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.logo-png img {
+    height: 90%;
+}
+
+#Logo {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    font-family: 'Oswaldo';
+}
+
+.cabecario {
+    background: #0A0A0A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.cabecario-menu {
+    display: none;
+}
+
+.cabecario a {
+    padding-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cabecario p {
+    color: #fff;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list a {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.list a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.burguer-menu {
+    display: none;
+}
+
+.nossos-parceiros {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    padding: 20px;
+}
+
+.nossos-parceiros-txt {
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--font);
+    text-shadow: 2px 2px 5px black;
+}
+
+.txt p {
+    font-size: 1.4rem;
+    color: var(--font);
+    text-shadow: 2px 2px 5px black;
+}
+
+.parceiros-container {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.div {
+    width: 250px;
+    height: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--corprimaria);
+    opacity: .85;
+}
+
+.div h2 {
+    font-size: 1.4rem;
+}
+
+.div p {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.png {
+    width: 60%;
+    height: auto;
+}
+
+.div:hover {
+    background: var(--corsecundaria);
+}
+
+.items {
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #0A0A0A;
+    text-align: center;
+}
+
+.items a {
+    color: #fff;
+}
+
+.items a:hover {
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+.items p {
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+}
+
+.items ul {
+    display: flex;
+    gap: 20px;
+}
